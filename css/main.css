@@ -112,10 +112,12 @@ header .row2{
 .ejemplos .logo{
 	width: 250px
 }
-.ejemplos h2{
+.ejemplos h2,h5{
 	color: #A9BCF5;
 }
 
+.ejemplos h5{
 
+}
 
 
