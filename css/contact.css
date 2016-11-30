@@ -1,0 +1,64 @@
+body{
+	background: url(../image/large.jpg);
+	background-size: cover;
+	font-family: Garamond
+}
+.container{
+	width: 600px;
+	height: 360px;
+	margin: 0 auto;
+	margin-top: 15%;
+	border: 2px solid #BDBDBD;
+	border-top: 5px solid #01A9DB;
+	background: white;
+	padding: 5px 50px
+	}
+hr{margin-top: -20px}
+
+span{color: red}
+
+button{color: white;
+	background-color: #01A9DB;
+	padding: 3px;
+	border: #01A9DB;
+	display: block;
+	margin-left: 150px
+	}
+.form-group{margin-bottom: 20px}
+input{width: 300px}
+.uno{margin-left: 70px}
+.dos{margin-left: 86px}
+.tres{margin-left:20px;height: 100px}
+.cuatro{margin-left: 200px;
+	width: 160px;
+	margin-top: 10px}
+
+label.url{margin-top: -20px}
+.parte-baja{height: 30px}
+
+
+
+/* --------------------responsive ---------*/
+
+@media screen and (max-width : 910px) {
+	body{background-size:contain;
+	}
+	
+}
+@media screen and (max-width : 710px) {
+	.container{width:510px
+	}
+	
+}
+@media screen and (max-width : 620px) {
+	.container{width:300px
+	}
+	input{width: 100px}
+	input.cuatro{margin-left: 50px;}
+}
+@media screen and (max-width : 300px) {
+	.container{width:100%
+	}
+	form{width: 100%}
+}
+
