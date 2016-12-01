@@ -8,45 +8,63 @@
 	  	<link rel="stylesheet" href="css/bootstrap.min.css">
 	  	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<header>
 			<div class="opaco">
-				<div class="container-flexbox">
+				<div class="container">
 					<div class="row1">
-						<div class="col-md-5">
+						<div class="col-md-5 col-sm-2 col-xs-6">
 							<div class="prinmero">
 								<img src="image/user-r.png" alt="">
 							</div>
 						</div>
-						<div class="col-md-7">
-							<ul>
-								<li><a href="#">¿Qué me ofrece?</a></li>
-								<li><a href="#">¿Cómo funciona?</a></li>
-								<li><a href="#">¿por qué usarlo?</a></li>
-								<li><a href="contact.html">Contáctanos</a></li>
-							</ul>
+						<div class="col-md-7 col-sm-10 col-xs-6">
+							<button class="btn ntm-primary visible-xs" data-toggle="collapse" data-target="#main-navigation">Menu</button>
+							<nav class="hidden-xs">
+								<ul class="list-inline text-right">
+									<li><a href="#">¿Qué me ofrece?</a></li>
+									<li><a href="#">¿Cómo funciona?</a></li>
+									<li><a href="#">¿por qué usarlo?</a></li>
+									<li><a href="contact.html">Contáctanos</a></li>
+								</ul>
+							</nav>
+							<nav id="main-navigation" class="collapse">
+						
+								<ul class="text-right">
+									<li><a href="#">¿Qué me ofrece?</a></li>
+									<li><a href="#">¿Cómo funciona?</a></li>
+									<li><a href="#">¿por qué usarlo?</a></li>
+									<li><a href="contact.html">Contáctanos</a></li>
+								</ul>
+									
+							</nav>
 						</div>
 					</div>
-					<h1>
-							Obtén videos de personas reales utilizando tu sitio web, en 1 hora
-					</h1>
-					<div class="prueba">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-4 col-md-offset-3">
-									<p class="gratis">
-										PRUEBA GRATUITA
-									</p>
-									<h5 class="gratis">Obtén un video gratis de 5 minutos</h5>
-								</div>
-								<div class="col-md-2 col-md-offset-1">
-									<button><a href="#">Pruebalo gratis</a></button>
-								</div> 
-							</div>		
-						</div>	 
+					
+					<div class="frase">
+						<h1>
+							Obtén videos de personas reales <br>utilizando tu sitio web, en 1 hora
+						</h1>
 					</div>
-				</div>
+				</div>	
+				<div class="prueba">
+					<div class="container">
+						<div class="row2">
+							<div class="col-md-4 col-md-offset-3">
+								<p class="gratis">
+									PRUEBA GRATUITA
+								</p>
+								<h5 class="gratis">Obtén un video gratis de 5 minutos</h5>
+							</div>
+							<div class="col-md-2 col-md-offset-1">
+									<button><a href="#">Pruebalo gratis</a></button>
+							</div> 
+						</div>			
+					</div>	 
+				</div>		
 			</div>	
 		</header>
 
@@ -76,10 +94,14 @@
 						<h5>Te haremos llegar los videos y el feedback completo el mismo día.</h5>
 					</div>
 				</div>
-				<img src="image/separador.png" alt="">
-				<hr>
 			</div>
 		</section>
+
+		<div class="separador">
+			<img src="image/separador.png" alt="">
+			<hr>
+		</div>
+
 		<section class="ejemplos">
 			<div class="container">
 				<div class="row">
@@ -94,33 +116,52 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
-						<div class="conten-icon">
-							<ul>
-								<li><i class="icon-pencil"></i></li>
-								<li><i class="icon-tools-2"></i></li>
-								<li><i class="icon-magnifying-glass"></i></li>
-								<li><img src="image/separador.png" alt=""></li>
-							</ul>
-						</div>	
+					<div class="img-ejem col-md-6">
+						
 					</div>							
 						
 					<div class="col-md-6">
-						<h3>Lo quiero ¿Qué hago?</3>
-						<h4>Paso 1: envianos tu link</h4>
-						<h6>Al darle click al botón de prueba. Coloca tu nombre y tu correo electrónico, enviremos el video y el informe con el feedback</h6>
-						<h4>Paso 2: descibe a tu público objetivo</h4>
-						<h6>Describe las acciones que quieres que evaluemos por ejemplo:</h6>
-						<ul>
-						<li><h6>Aprimera vista de ¿Que rees que trata la página?</h6></li>
-						<li><h6>Busca el botón de inscribirte o comprar</h6></li>
-						<li><h6>¿Es fácil o difícil leer los textos</h6></li>
-						</ul>
-						<h6>Puedes preguntar como las que te mostramos</h6>
-						<h4>Paso 3: recibe un video y feedback completo</h4>
-						<h6>Recibe un combo de 7 videos y un informe detallado con las captaciones de usabilidad de tu producto.</h6>
+						<div class="paso1">
+							<span class="icon-blue">
+								<i class="icon-pencil"></i>
+							</span>	
+							<h3>Lo quiero ¿Qué hago?</3>
+							<h4>Paso 1: envianos tu link</h4>
+							<h6>Al darle click al botón de prueba. Coloca tu nombre y tu correo electrónico, enviremos el video y el informe con el feedback</h6>
+						</div>
+						<div class="paso2">
+							<span class="icon-blue">
+								<i class="icon-tools-2"></i>
+							</span>
+							<h4>Paso 2: descibe a tu público objetivo</h4>
+							<h6>Describe las acciones que quieres que evaluemos por ejemplo:</h6>
+							<ul>
+							<li><h6>Aprimera vista de ¿Que rees que trata la página?</h6></li>
+							<li><h6>Busca el botón de inscribirte o comprar</h6></li>
+							<li><h6>¿Es fácil o difícil leer los textos</h6></li>
+							</ul>
+							<h6>Puedes preguntar como las que te mostramos</h6>
+						</div>
+						<div class="paso3">
+							<span class="icon-blue">
+								<i class="icon-magnifying-glass"></i>
+							</span>
+							<h4>Paso 3: recibe un video y feedback completo</h4>
+							<h6>Recibe un combo de 7 videos y un informe detallado con las captaciones de usabilidad de tu producto.</h6>
+						</div>
 					</div>
 				</div>
+			</div>	
+		</section>		
+				<div class="separador">
+					<img src="image/separador.png" alt="">
+					<hr>
+				</div>
+
+
+		
+		<section class="usar">	
+			<div class="container">	
 				<div class="row">
 					<div class="col-md-6">
 						<h2>Por qué usar <img class="logo" src="image/logo-2.jpg" alt=""></h2>
@@ -139,6 +180,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="gratuita">
 			<div class="container">
 				<div class="row">
