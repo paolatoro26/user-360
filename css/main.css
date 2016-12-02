@@ -132,6 +132,21 @@ button{
 	display: block;
 
 }
+.paso1,.paso2,.paso3{
+	position: relative;
+}
+.icon-blue{
+	position: absolute;
+	background: rgba(26,136,180,.6);
+	padding: 10px;
+	border-radius: 50%;
+	font-size: 18px;
+	color: white;
+	top: 50%;
+	transform:translateY(50%);
+	margin-left: -50px
+}
+
 /* -------------------EJEMPLOS y USAR-------*/
 .ejemplos img,.usar img{
 	width: 100%
@@ -147,29 +162,7 @@ button{
 	font-size: 14px
 }
 
-.ejemplos .opacidad{
-	background-color: (84,81,81,.3);
-	
-}
-.ejemplos .img-ejem{
-	background: url(../images/sec-2.jpg);
-	background-size: cover;
-	
-}
-.paso1,.paso2,.paso3{
-	position: relative;
-}
-.icon-blue{
-	position: absolute;
-	background: rgba(26,136,180,.6);
-	padding: 10px;
-	border-radius: 50%;
-	font-size: 18px;
-	color: white;
-	top: 50%;
-	transform:translateY(50%);
-	margin-left: -50px
-}
+
 
 /* ---------------FIN EJEMPLOS Y USAR-------*/
 /* -------------------------USAR------------*/
@@ -247,8 +240,28 @@ header .row1 ul{text-align: center;}
 	footer{
 		text-align: center;
 	}
-	.container{width: 100% ;}
+	.container{width: 100% ;
+		padding: 0 10px}
 	header h1{font-size: 30px}
+	#main-navigation ul{
+		width: 170px;
+		float: right;
+		padding: 5px;
+		background-color:rgba(26,136,180,.6);
+		color: white;
+		border-radius: 5px
+	}
+
+	.ejemplos .ejem{
+		position: absolute;
+		
+	}
+	
+	.icon-blue{
+	font-size: 14px;
+	top: 14%;
+	margin-left: 300px
+}
 	
 }
 
